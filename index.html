@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="icon" href="assets/icono-principal.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="grila">
+        <header>
+            <nav>
+                <div class="container-nav">
+                    <div></div>
+                    <div class="container-img-header">
+                        <img src="assets/logo_utm_blanco.png" alt="logo de la universidad">
+                    </div>
+                    <div class="container-dark-light">
+                        <button class="btn-dark-light" id="btn-darkLight">
+                            <i class="bi bi-brightness-high-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-conversor">
+                <form class="form-inputs">
+                    <label>Número decimal : <br>
+                        <input id="entrada-decimal" type="number" step="any" name="input-number" placeholder="10.23" autofocus>
+                    </label>
+                    <br>
+                    <label >Representación binaria : <br>
+                        <input id="entrada-binaria" type="number" name="input-binario" disabled>
+                    </label>
+                    <br>
+                    <button class="btn-calcular" id="btn-calcular">Calcular</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>Angel López Ruíz</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
