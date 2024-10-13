@@ -39,7 +39,7 @@ header {
 .container-nav {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
 
     padding-top: 10px;
 }
