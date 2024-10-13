@@ -26,18 +26,25 @@
             </nav>
         </header>
         <main>
-            <div class="container-conversor">
-                <form class="form-inputs">
-                    <label>Número decimal : <br>
-                        <input id="entrada-decimal" type="number" step="any" name="input-number" placeholder="10.23" autofocus>
-                    </label>
-                    <br>
-                    <label >Representación binaria : <br>
-                        <input id="entrada-binaria" type="number" name="input-binario" disabled>
-                    </label>
-                    <br>
-                    <button class="btn-calcular" id="btn-calcular">Calcular</button>
-                </form>
+            <div class="titulo">
+                <h1>IEEE-754 Floating Point Converter</h1>
+            </div>
+            <div class="flex-container">
+                <div class="container-conversor">
+                    <form class="form-inputs">
+                        <label>Número decimal : <br>
+                            <input id="entrada-decimal" type="number" step="any" name="input-number" placeholder="10.23" rquired autofocus>
+                        </label>
+                        <br>
+                        <label >Representación binaria : <br>
+                            <input id="entrada-binaria" type="text" name="input-binario" disabled>
+                            <br>
+                            <input id="entrada-binaria-dos" type="text" name="input-binario" disabled>
+                        </label>
+                        <br>
+                        <button class="btn-calcular" id="btn-calcular">Calcular</button>
+                    </form>
+                </div>
             </div>
         </main>
         <footer>

@@ -11,11 +11,6 @@
     --color-light-uno: #E5D9F2;
     --color-light-dos: #A594F9;
     --color-light-tres: #CDC1FF;
-
-    --color-dark-uno: #2E073F;
-    --color-dark-dos: #AD49E1;
-    --color-dark-tres: #7A1CAC;
-
 }
 
 img {
@@ -84,9 +79,25 @@ main {
     color: var(--color-light-dos);
 }
 
+.titulo {
+    margin-bottom: 20px;
+
+    text-align: center;
+    color: var(--color-light-uno);
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container-conversor {
-    height: 70vh;
+    height: 50vh;
     margin: 0 10px;
+    
+    width: 80vw;
+    max-width:800px;
     
     border-radius: 16px;
     background-color: var(--fondo-secundario-dark);
@@ -111,18 +122,22 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-input[type="number"]:focus {
+input:focus{
     outline: none;
 }
 
-input[type="number"] {
+input{
     border-radius: 10px;
     height: 30px;
-    width: 300px;
+    width: 360px;
 
     text-align: center;
     color: var(--color-light-uno);
     background-color: var(--fondo-principal-dark);
+}
+
+.form-inputs label:first-child input{
+    width: 200px;
 }
 
 .btn-calcular {
@@ -145,4 +160,10 @@ footer {
 
     background-color: var(--fondo-secundario-dark);
     color: var(--color-light-uno);
+}
+
+@media screen and (max-width: 400px) {
+    input {
+        width: 200px;
+    }
 }
