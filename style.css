@@ -35,19 +35,12 @@ header {
     color: var(--color-light-uno);
 }
 
-
 .container-nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
 
     padding-top: 10px;
-}
-
-.container-dark-light {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container-img-header {
@@ -73,7 +66,7 @@ main {
     flex-flow: column wrap;
     align-self: center;
     justify-content: center;
-    height: 80vh;
+    padding-bottom: 40px;
 
     background-color: var(--fondo-principal-dark);
     color: var(--color-light-dos);
@@ -88,16 +81,18 @@ main {
 
 .flex-container {
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    gap: 40px;
 }
 
 .container-conversor {
-    height: 50vh;
     margin: 0 10px;
-    
+    min-height: 40vh;
     width: 80vw;
     max-width:800px;
+    padding-bottom: 40px;
     
     border-radius: 16px;
     background-color: var(--fondo-secundario-dark);
@@ -111,7 +106,8 @@ main {
     margin-top: 20px; 
 }
 
-label {
+label, h2{
+    font-weight: 200;
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
@@ -147,6 +143,27 @@ input{
 
     background-color: var(--color-light-dos);
     color: var(--fondo-secundario-dark);
+}
+
+table {
+    color: var(--color-light-tres);
+    background-color: var(--fondo-principal-dark);
+}
+
+table tr:nth-child(n) {
+    background-color: var(--fondo-principal-dark);
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--fondo-secundario-dark);
+}
+
+td {
+    text-align: center;
+    color: var(--color-light-uno);
+    min-width: 40px;
+    height: 20px;
+
 }
 
 /*FOOTER -------------------------------------------------------*/

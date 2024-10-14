@@ -6,7 +6,6 @@
     <title>Conversor</title>
     <link rel="icon" href="assets/icono-principal.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <div class="grila">
@@ -39,10 +38,88 @@
                         <button class="btn-calcular" id="btn-calcular">Calcular</button>
                     </form>
                 </div>
+
+                <div class="container-conversor">
+                    <form class="form-inputs">
+                        <h2>Exponente + 127: </h2>
+                        <table class="table-parte-entera">
+                            <thead>
+                                <th>
+                                    Suma
+                                </th>
+                            </thead>
+                            <tbody class="table-exponente-body"> 
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4" id="exponente-resultado">Resultado :</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="container-conversor">
+                    <form class="form-inputs">
+                        <h2>Parte entera :</h2>
+                        <table class="table-parte-entera">
+                            <thead>
+                                <th>
+                                    Valor
+                                </th>
+                                <th>
+                                    Divisor
+                                </th>
+                                <th>
+                                    Cociente
+                                </th>
+                                <th>
+                                    Residuo
+                                </th >
+                            </thead>
+                            <tbody class="table-parte-entera-body"> 
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4" id="parte-entera-resultado">Resultado :</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="container-conversor">
+                    <form class="form-inputs">
+                        <h2>Parte fraccionaria :</h2>
+                        <table class="table-parte-fraccionaria">
+                            <thead>
+                                <th>
+                                    Valor
+                                </th>
+                                <th>
+                                    Multiplicador
+                                </th>
+                                <th>
+                                    Producto
+                                </th>
+                                <th>
+                                    Digito
+                                </th >
+                            </thead>
+                            <tbody class="table-parte-fraccionaria-body"> 
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4" id="parte-fraccionaria-resultado">Resultado : </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
+                </div>
             </div>
         </main>
         <footer>
-            <p>Angel López Ruíz</p>
+            <p>© Angel López Ruíz</p>
         </footer>
     </div>
     <script src="script.js"></script>
